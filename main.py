@@ -11,8 +11,8 @@ women = data[:, 2]
 fig, ax = plt.subplots(figsize=(15, 7))
 #plt.tight_layout()
 
-ax.barh(ages, -men, color='navy')
-ax.barh(ages, women, color='violet')
+ax.barh(ages, -men, color='navy', label='female surplus')
+ax.barh(ages, women, color='violet', label='male surplus')
 
 ax.barh(ages, men, color='blue', align='center', label='men')
 ax.barh(ages, -women, color='pink', align='center', label='women')
